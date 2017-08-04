@@ -1,7 +1,11 @@
   <h1>Abuelita Sordita</h1>
-  <% if @abuelita %>
-    <p>Tu Abuelita dice: "<span id="grandma_says"><%= @abuelita %></span>"</p>
-  <% end %>
+  <div id="divrespuesta" style="display:none;">  
+    <p>Tu Abuelita dice: "<span id="grandma_says"></span>"</p>
+  </div>
+
+  <%# if @abuelita %>
+    <!-- <p>Tu Abuelita dice: "<span id="grandma_says"><%#= @abuelita %></span>"</p> -->
+  <%# end %>
 
   <form id="formulario" action="/abuelita" method="post">
     Dile algo a tu abuelita:
